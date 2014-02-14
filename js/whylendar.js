@@ -87,6 +87,9 @@ whylendar = function (svgname, csvdata, attribute) {
             d3.selectAll('.t' + today).classed('mouseon', false);
         });
 
+        var h = $('#' + svgname).height();
+        $('#' + svgname).parent().scrollTop(h);
+
     };
 
     //開始的動畫。
@@ -100,8 +103,11 @@ whylendar = function (svgname, csvdata, attribute) {
             var thisrect = d3.select(this);
             var thisweek = thisrect.attr('data-weekno');
             whysto.each(function (i) {
-                var x = d3.selectAll('#' + i.svgname + ' rect.w' + thisweek).attr('x');
-                $('#' + i.svgname).parent().scrollLeft(x);
+                selectobj = d3.selectAll('#' + i.svgname + ' rect.w' + thisweek);
+                if (selectobj[0].length != 0) {
+                    var x = d3.selectAll('#' + i.svgname + ' rect.w' + thisweek).attr('x');
+                    $('#' + i.svgname).parent().scrollLeft(x);
+                }
             });
         }
     };
