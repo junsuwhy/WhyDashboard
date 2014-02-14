@@ -1,4 +1,0 @@
-WhyDashboard
-============
-
-My Personal Dashboard.
