@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+}
+div#wrapper {
+    padding: 10px 0 70px 0;
+    margin: 0px auto;
+    text-align: center;
+    width: 960px;
+}
+div#content-inner {
+    margin: 0px auto;
+    text-align: center;
+}
+.type {
+    width: 960px;
+    padding: 10px;
+    clear: both;
+}
+.svg-wrapper {
+    overflow: scroll;
+    float: left;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+.column1 {
+    width: 300px;
+}
+.column2 {
+    width: 620px;
+}
+.svg-container {
+    height: 280px;
+    text-align: left;
+}
+/*whylendar用*/
+
+.day {
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    /*float: left;*/
+}
+div.mouseon {
+    -moz-box-shadow: inset 0 0 5px 5px #444;
+    -webkit-box-shadow: inset 0 0 5px 5px #444;
+    box-shadow: inset 0 0 5px 5px #444;
+    background-color: #de6c45 !important;
+    /*border-style: solid;
+    width: 27px;
+    height: 27px;
+    */
+}
+rect.mouseon {
+    fill: #de6c45 !important;
+}
+/*
+.Sun {
+    display: block;
+}*/
